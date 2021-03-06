@@ -69,14 +69,14 @@ export const TimerSelector = createSelector(
   }
 );
 
-export const TimerListSelector = createSelector(
-  (state: RootState) => state.timerPageState.timerListState.timerListItem,
-  (timerListItem: ITimerListItemProps[]): ITimerListProps => {
-    return {
-      timerListItem.title
-    }
-  }
-)
+// export const TimerListSelector = createSelector(
+//   (state: RootState) => state.timerPageState.timerListState.timerListItem,
+//   (timerListItem: ITimerListItemProps[]): ITimerListItemProps => {
+//     return {
+
+//     }
+//   }
+// )
 
 export const {
   setSeconds,
