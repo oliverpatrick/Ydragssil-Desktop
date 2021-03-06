@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import TimerControlBar from './TimerControlBar/TimerControlBar';
 import TimerListItem from './TimerList/TimerItem/TimerListItem';
 import { TimerSelector } from './TimerPageSlice';
-import TimerList from './TimerList/TimerList';
+// import TimerList from './TimerList/TimerList';
 
 export function TimerPage() {
   const currentTime = useSelector(TimerSelector);
@@ -13,7 +13,7 @@ export function TimerPage() {
   return (
     <div>
       <TimerControlBar />
-      <TimerList timerListItem={}  />
+      {/* <TimerList timerListItem={}  /> */}
       {/* <Timer
         hours={currentTime.hours}
         minutes={currentTime.minutes}
